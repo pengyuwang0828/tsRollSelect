@@ -1,0 +1,14 @@
+Package: tsRollSelect
+Type: Package
+Title: Select Time Series Forecasts by Rolling Backtesting
+Version: 0.1.0
+Authors@R: person("Pengyu", "Wang", email = "maintainer@example.org",
+    role = c("aut", "cre"))
+Description: Compares exponential smoothing, autoregressive integrated moving
+    average, random forest, and extreme gradient boosting for regularly spaced
+    univariate time series. Uses expanding training windows and a common forecast
+    horizon to compare prediction errors. Refits the selected model to the full
+    series and returns forecasts, model scores, and individual backtest predictions.
+License: GPL-3
+Encoding: UTF-8
+Imports: forecast, ranger, xgboost, stats, withr
